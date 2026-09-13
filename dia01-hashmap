@@ -1,0 +1,20 @@
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Lo primero es declarar el hashMap
+        HashMap<String, Double> precios = new HashMap<>();
+
+        // Con put relacionamos la clave con el valor
+        precios.put("Portatil", 899.99);
+        precios.put("Raton", 25.50);
+        precios.put("Teclado", 45.00);
+
+        // Al usar la misma clave, actualiza el valor anterior
+        precios.put("Raton", 19.99);
+
+        // Para imprimir el resultado por consola
+        System.out.println("Precio final del raton: " + precios.get("Raton"));
+    }
+}
